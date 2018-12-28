@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lambdaChainInvoke", "lambda
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Any", "Any\Any.vcxproj", "{B8D59483-D870-4927-9161-41D9A5247A6D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shared_ptr", "shared_ptr\shared_ptr.vcxproj", "{135879BE-42F4-41F0-AC74-9EED64375582}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -153,6 +155,14 @@ Global
 		{B8D59483-D870-4927-9161-41D9A5247A6D}.Release|x64.Build.0 = Release|x64
 		{B8D59483-D870-4927-9161-41D9A5247A6D}.Release|x86.ActiveCfg = Release|Win32
 		{B8D59483-D870-4927-9161-41D9A5247A6D}.Release|x86.Build.0 = Release|Win32
+		{135879BE-42F4-41F0-AC74-9EED64375582}.Debug|x64.ActiveCfg = Debug|x64
+		{135879BE-42F4-41F0-AC74-9EED64375582}.Debug|x64.Build.0 = Debug|x64
+		{135879BE-42F4-41F0-AC74-9EED64375582}.Debug|x86.ActiveCfg = Debug|Win32
+		{135879BE-42F4-41F0-AC74-9EED64375582}.Debug|x86.Build.0 = Debug|Win32
+		{135879BE-42F4-41F0-AC74-9EED64375582}.Release|x64.ActiveCfg = Release|x64
+		{135879BE-42F4-41F0-AC74-9EED64375582}.Release|x64.Build.0 = Release|x64
+		{135879BE-42F4-41F0-AC74-9EED64375582}.Release|x86.ActiveCfg = Release|Win32
+		{135879BE-42F4-41F0-AC74-9EED64375582}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -172,6 +182,7 @@ Global
 		{C7F9D00E-007B-4764-A40F-E1A6C57E260D} = {6FE60CDE-FCDC-4818-A6C2-BBA38ECAD838}
 		{C8E3C1C7-FBAE-4BCF-A27E-5486BA881716} = {6FE60CDE-FCDC-4818-A6C2-BBA38ECAD838}
 		{B8D59483-D870-4927-9161-41D9A5247A6D} = {6FE60CDE-FCDC-4818-A6C2-BBA38ECAD838}
+		{135879BE-42F4-41F0-AC74-9EED64375582} = {6FE60CDE-FCDC-4818-A6C2-BBA38ECAD838}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7EA0BE44-B8A1-4BE6-BD91-50C48D8200D6}
