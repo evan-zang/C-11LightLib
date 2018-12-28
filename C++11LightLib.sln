@@ -43,6 +43,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "thread", "thread\thread.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mutex", "mutex\mutex.vcxproj", "{B0FF92AC-E71A-4BD3-894B-F36C1331F23E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "condition_variable", "condition_variable\condition_variable.vcxproj", "{415271AD-FCCE-4E32-A89D-B008368EC1E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -203,6 +205,14 @@ Global
 		{B0FF92AC-E71A-4BD3-894B-F36C1331F23E}.Release|x64.Build.0 = Release|x64
 		{B0FF92AC-E71A-4BD3-894B-F36C1331F23E}.Release|x86.ActiveCfg = Release|Win32
 		{B0FF92AC-E71A-4BD3-894B-F36C1331F23E}.Release|x86.Build.0 = Release|Win32
+		{415271AD-FCCE-4E32-A89D-B008368EC1E8}.Debug|x64.ActiveCfg = Debug|x64
+		{415271AD-FCCE-4E32-A89D-B008368EC1E8}.Debug|x64.Build.0 = Debug|x64
+		{415271AD-FCCE-4E32-A89D-B008368EC1E8}.Debug|x86.ActiveCfg = Debug|Win32
+		{415271AD-FCCE-4E32-A89D-B008368EC1E8}.Debug|x86.Build.0 = Debug|Win32
+		{415271AD-FCCE-4E32-A89D-B008368EC1E8}.Release|x64.ActiveCfg = Release|x64
+		{415271AD-FCCE-4E32-A89D-B008368EC1E8}.Release|x64.Build.0 = Release|x64
+		{415271AD-FCCE-4E32-A89D-B008368EC1E8}.Release|x86.ActiveCfg = Release|Win32
+		{415271AD-FCCE-4E32-A89D-B008368EC1E8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -227,6 +237,7 @@ Global
 		{F20C7010-1117-4DE8-9067-B5ECDFC6D663} = {6FE60CDE-FCDC-4818-A6C2-BBA38ECAD838}
 		{F5A88604-FD6B-4E3B-AD45-1D6D075BF7BF} = {6FE60CDE-FCDC-4818-A6C2-BBA38ECAD838}
 		{B0FF92AC-E71A-4BD3-894B-F36C1331F23E} = {6FE60CDE-FCDC-4818-A6C2-BBA38ECAD838}
+		{415271AD-FCCE-4E32-A89D-B008368EC1E8} = {6FE60CDE-FCDC-4818-A6C2-BBA38ECAD838}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7EA0BE44-B8A1-4BE6-BD91-50C48D8200D6}
