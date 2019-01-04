@@ -36,8 +36,8 @@ struct function_traits<function<Ret(Args...)>>:function_traits<Ret(Args...)>{};
 //member function
 #define FUNCTION_TRAITS(...) \
 	template<typename ReturnType,typename ClassType,typename...Args>\
-	struct function_traits<ReturnType(ClassType::*)(Args...) __VA_ARGS__>:function_traits<RetureType(Args...)>{};\
-
+	struct function_traits<ReturnType(ClassType::*)(Args...) __VA_ARGS__>:\
+	function_traits<RetureType(Args...)>{};\
 
 FUNCTION_TRAITS()
 FUNCTION_TRAITS(const)
