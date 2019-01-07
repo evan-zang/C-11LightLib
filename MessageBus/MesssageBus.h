@@ -26,7 +26,7 @@ public:
 		using function_type = function<R()>;
 		string strMsgType = strTopic + typeid(function_type).name();
 		auto range = m_map.equal_range(strMsgType);
-		for (iterator it = range.first;it!= range.second;++it)
+		for (Iterater it = range.first;it!= range.second;++it)
 		{
 			auto f = it->second.AnyCast<function_type>();
 			f();
@@ -39,7 +39,7 @@ public:
 		using function_type = function<R(Args...)>;
 		string strMsgType = strTopic + typeid(function_type).name();
 		auto range = m_map.equal_range(strMsgType);
-		for (iterator it = range.first; it != range.second;++it)
+		for (Iterater it = range.first; it != range.second;++it)
 		{
 			auto f = it->second.AnyCast<function_type>();
 			f(forward<Args>(args)...);

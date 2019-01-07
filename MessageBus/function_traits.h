@@ -37,7 +37,7 @@ struct function_traits<function<Ret(Args...)>>:function_traits<Ret(Args...)>{};
 #define FUNCTION_TRAITS(...) \
 	template<typename ReturnType,typename ClassType,typename...Args>\
 	struct function_traits<ReturnType(ClassType::*)(Args...) __VA_ARGS__>:\
-	function_traits<RetureType(Args...)>{};\
+	function_traits<ReturnType(Args...)>{};
 
 FUNCTION_TRAITS()
 FUNCTION_TRAITS(const)
@@ -46,18 +46,18 @@ FUNCTION_TRAITS(const volatile)
 
 //º¯Êý¶ÔÏó
 template<typename Callable>
-struct function_traits:FUNCTION_TRAITS<decltype(&Callable::operator())>{};
+struct function_traits:function_traits<decltype(&Callable::operator())>{};
 
 template<typename Function>
 typename function_traits<Function>::stl_function_type to_function(const Function& lambda)
 {
-	return static_cast<function_traits<Function>::stl_function_type > (lambda);
+	return  static_cast<typename function_traits<Function>::stl_function_type > (lambda);
 }
 
 template<typename Function>
 typename function_traits<Function>::stl_function_type to_function(Function&& lambda)
 {
-	return static_cast<function_traits<Function>::stl_function_type>(forward<Function>(lambda));
+	return static_cast<typename function_traits<Function>::stl_function_type>(forward<Function>(lambda));
 }
 
 template<typename Function>
